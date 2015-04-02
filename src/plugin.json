@@ -1,0 +1,15 @@
+{
+  "name": "Teleport",
+  "version": "1.0",
+  "mainClass": "tk.coolv1994.plugins.tp.Teleport",
+  "commands": {
+    "tp": "tk.coolv1994.plugins.tp.commands.Tp",
+    "tpa": "tk.coolv1994.plugins.tp.commands.Tpa",
+    "tpaccept": "tk.coolv1994.plugins.tp.commands.TpAccept",
+    "tpahere": "tk.coolv1994.plugins.tp.commands.TpaHere",
+    "tpdeny": "tk.coolv1994.plugins.tp.commands.TpDeny",
+    "tphere": "tk.coolv1994.plugins.tp.commands.TpHere",
+    "tppos": "tk.coolv1994.plugins.tp.commands.TpPos",
+    "tprandom": "tk.coolv1994.plugins.tp.commands.TpRandom"
+  }
+}
