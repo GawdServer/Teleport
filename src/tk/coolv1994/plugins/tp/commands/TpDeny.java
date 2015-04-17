@@ -1,7 +1,8 @@
 package tk.coolv1994.plugins.tp.commands;
 
-import tk.coolv1994.gawdserver.events.Command;
-import tk.coolv1994.gawdserver.utils.Chat;
+import tk.coolv1994.gawdapi.events.Command;
+import tk.coolv1994.gawdapi.perms.Permissions;
+import tk.coolv1994.gawdapi.utils.Chat;
 import tk.coolv1994.plugins.tp.Teleport;
 
 /**
@@ -10,8 +11,11 @@ import tk.coolv1994.plugins.tp.Teleport;
 public class TpDeny implements Command {
     @Override
     public void onCommand(String player, String[] args) {
-        String deny = Teleport.requests.remove(player);
-        if (deny != null) {
+        if (!Permissions.hasPermission(player, "tp.tpa.deny")) {
+            Chat.sendMessage(player, "No permission.");
+            return;
+        }
+        if (Teleport.removeRequest(player)) {
             Chat.sendMessage(player, "Teleport request denied.");
         } else {
             Chat.sendMessage(player, "You do not have pending requests.");

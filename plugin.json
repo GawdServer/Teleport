@@ -9,7 +9,6 @@
     "tpahere": "tk.coolv1994.plugins.tp.commands.TpaHere",
     "tpdeny": "tk.coolv1994.plugins.tp.commands.TpDeny",
     "tphere": "tk.coolv1994.plugins.tp.commands.TpHere",
-    "tppos": "tk.coolv1994.plugins.tp.commands.TpPos",
-    "tprandom": "tk.coolv1994.plugins.tp.commands.TpRandom"
+    "tppos": "tk.coolv1994.plugins.tp.commands.TpPos"
   }
 }
