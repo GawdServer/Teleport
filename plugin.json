@@ -1,14 +1,14 @@
 {
   "name": "Teleport",
-  "version": "1.0",
-  "mainClass": "tk.coolv1994.plugins.tp.Teleport",
+  "version": "1.1",
+  "mainClass": "io.github.gawdserver.tp.Teleport",
   "commands": {
-    "tp": "tk.coolv1994.plugins.tp.commands.Tp",
-    "tpa": "tk.coolv1994.plugins.tp.commands.Tpa",
-    "tpaccept": "tk.coolv1994.plugins.tp.commands.TpAccept",
-    "tpahere": "tk.coolv1994.plugins.tp.commands.TpaHere",
-    "tpdeny": "tk.coolv1994.plugins.tp.commands.TpDeny",
-    "tphere": "tk.coolv1994.plugins.tp.commands.TpHere",
-    "tppos": "tk.coolv1994.plugins.tp.commands.TpPos"
+    "tp": "io.github.gawdserver.tp.commands.Tp",
+    "tpa": "io.github.gawdserver.tp.commands.Tpa",
+    "tpaccept": "io.github.gawdserver.tp.commands.TpAccept",
+    "tpahere": "io.github.gawdserver.tp.commands.TpaHere",
+    "tpdeny": "io.github.gawdserver.tp.commands.TpDeny",
+    "tphere": "io.github.gawdserver.tp.commands.TpHere",
+    "tppos": "io.github.gawdserver.tp.commands.TpPos"
   }
 }

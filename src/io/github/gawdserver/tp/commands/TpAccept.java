@@ -1,18 +1,20 @@
-package tk.coolv1994.plugins.tp.commands;
+package io.github.gawdserver.tp.commands;
 
-import tk.coolv1994.gawdapi.Gawd;
-import tk.coolv1994.gawdapi.events.Command;
-import tk.coolv1994.gawdapi.perms.Permissions;
-import tk.coolv1994.gawdapi.utils.Chat;
-import tk.coolv1994.gawdapi.utils.ColorCodes;
-import tk.coolv1994.plugins.tp.Teleport;
+import io.github.gawdserver.api.Server;
+import io.github.gawdserver.api.events.Command;
+import io.github.gawdserver.api.perms.Permissions;
+import io.github.gawdserver.api.player.Sender;
+import io.github.gawdserver.api.utils.Chat;
+import io.github.gawdserver.api.utils.ColorCodes;
+import io.github.gawdserver.tp.Teleport;
 
 /**
  * Created by Vinnie on 2/17/2015.
  */
 public class TpAccept implements Command {
+
     @Override
-    public void onCommand(String player, String[] args) {
+    public void playerCommand(String player, String[] args) {
         if (!Permissions.hasPermission(player, "tp.tpa.accept")) {
             Chat.sendMessage(player, "No permission.");
             return;
@@ -26,13 +28,18 @@ public class TpAccept implements Command {
             player2 = player2.substring(1);
             //TPAHERE
             Chat.sendMessage(player, "Teleporting to " + player2);
-            Gawd.sendCommand(String.format("tp %s %s", player, player2));
+            Server.sendCommand(String.format("tp %s %s", player, player2));
             Teleport.removeRequest(player);
         } else {
             //TPA
             Chat.sendMessage(player2, "Teleporting to" + player);
-            Gawd.sendCommand(String.format("tp %s %s", player2, player));
+            Server.sendCommand(String.format("tp %s %s", player2, player));
             Teleport.removeRequest(player);
         }
+    }
+
+    @Override
+    public void serverCommand(Sender sender, String[] args) {
+        Chat.sendMessage(Sender.CONSOLE.name(), "Use command as player.");
     }
 }

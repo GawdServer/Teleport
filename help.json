@@ -1,0 +1,39 @@
+{
+	"commands": {
+	  "tp": {
+		"description": "Teleport to a player or position.",
+		"usage": "!tp <player> or <x> <y> <z>",
+		"permission": "teleport.tp"
+	  },
+	  "tpa": {
+		"description": "Request to teleport to a player.",
+		"usage": "!tpa <player>",
+		"permission": "teleport.tpa.to"
+	  },
+	  "tpaccept": {
+		"description": "Accept the most recent teleport request.",
+		"usage": "!tpaccept",
+		"permission": "teleport.tpa.accept"
+	  },
+	  "tpahere": {
+		"description": "Request a player teleport to you.",
+		"usage": "!tpahere <player>",
+		"permission": "teleport.tpa.here"
+	  },
+	  "tpdeny": {
+		"description": "Deny the most recent teleport request.",
+		"usage": "!tpdeny",
+		"permission": "teleport.tpa.deny"
+	  },
+	  "tphere": {
+		"description": "Teleport a player to you.",
+		"usage": "!tp <player>",
+		"permission": "teleport.tphere"
+	  },
+	  "tppos": {
+		"description": "Teleport to a position.",
+		"usage": "!tp <x> <y> <z>",
+		"permission": "teleport.tppos"
+	  }
+	}
+}

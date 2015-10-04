@@ -1,6 +1,6 @@
-package tk.coolv1994.plugins.tp;
+package io.github.gawdserver.tp;
 
-import tk.coolv1994.gawdapi.plugin.Plugin;
+import io.github.gawdserver.api.plugin.Plugin;
 
 import java.util.HashMap;
 import java.util.Map;
